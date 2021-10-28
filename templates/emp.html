@@ -1,0 +1,70 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <!--user welcome and logout-->
+    <div class="container d-flex justify-content-between align-self-center">
+      <h3 class="text-dark">bienvenido, usuario</h3>
+    
+    <a href="{{'login'}}" class="btn btn-danger" role="button">Salir</a>
+    </div>
+
+    <!--Table general info-->
+    <table class="table">
+        <tbody>
+          <tr>
+            <th scope="col">Nombres</th>
+            <td>Usuario</td>
+            <th scope="col">Fecha de ingreso</th>
+            <td>01/03/21</td> 
+          </tr>
+          <tr>
+            <th scope="col">Cargo</th>
+            <td>supervisor</td>
+            <th scope="col">Fecha fin del contrato</th>
+            <td>01/09/21</td> 
+          </tr>
+          <tr>
+            <th scope="col">Edad</th>
+            <td>21</td>
+            <th scope="col">Area</th>
+            <td>ventas</td> 
+          </tr>
+          <tr>
+            <th scope="col">Telefono</th>
+            <td>3133222111</td>
+            <th scope="col">Salario</th>
+            <td>3.100.000</td> 
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- dropdown month selection-->
+    <div class="dropdown d-flex justify-content-between">
+        <h3 class="text-dark">seleccione mes </h3>
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          SELECCIONAR
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+
+
+    <!--table score-->
+    <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Puntaje</th>
+            <th scope="col">Retroalimentacion</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+    
+            <td>200/500</td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto totam voluptate hic sequi earum saepe aspernatur facilis soluta quibusdam magni quaerat, dignissimos praesentium ad qui aut suscipit aperiam. Laudantium, distinctio?</td>
+        </tbody>
+      </table>
+      {% endblock %}

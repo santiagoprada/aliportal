@@ -1,0 +1,92 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    
+     <!--search panel-->
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"> Nombre completo</span>
+        <input type="text" class="form-control" placeholder="Nombre completo" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Cargo</span>
+        <input type="text" class="form-control" placeholder="Cargo" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Edad</span>
+        <input type="text" class="form-control" placeholder="Edad" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Telefono</span>
+        <input type="text" class="form-control" placeholder="Telefono" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+
+      
+    <div class="input-group mb-3">
+        <span class="input-group-text">Fecha de inicio del contrato</span>
+        <input data-datepicker="" class="form-control" id="initDate" type="text" placeholder="dd/mm/yyyy" required>
+    </div>
+    
+    <div class="input-group mb-3">
+        <span class="input-group-text">Fecha de terminacion del contrato</span>
+        <input data-datepicker="" class="form-control" id="endDate" type="text" placeholder="dd/mm/yyyy" required>
+    </div>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Area</span>
+        <input type="text" class="form-control" placeholder="Area" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Salario</span>
+        <input type="text" class="form-control" placeholder="Salario" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button class="btn btn-danger" type="button">Buscar</button>
+        <button class="btn btn-danger" type="button">Modificar</button>
+        <button class="btn btn-danger" type="button">Guardar</button>
+    </div>
+
+      <!--show table-->
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Cargo</th>
+            <th scope="col">Edad</th>
+            <th scope="col">Telfono</th>
+            <th scope="col">Fecha inicio</th>
+            <th scope="col">Fecha terminacion</th>
+            <th scope="col">Area</th>
+            <th scope="col">Salario</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <!--FFOR-->
+            <th scope="row"></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <!--FFOR-->            
+            <th scope="row"></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+         
+        </tbody>
+      </table>
+    
+    </div>
+    {% endblock %}
